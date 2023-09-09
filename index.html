@@ -29,8 +29,8 @@
 								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About Me</span></a></li>
 								<li><a href="#education" id="education-link"><span class="icon solid fa-book">Education</span></a></li>
 								<li><a href="#work" id="work-link"><span class="icon solid fa-suitcase">Work Experience</span></a></li>
-								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Projects</span></a></li>
-								<li><a href="#publications" id="pub-link"><span class="icon solid fa-newspaper">Publications</span></a></li>								
+								<li><a href="#publications" id="pub-link"><span class="icon solid fa-newspaper">Publications</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Projects</span></a></li>								
 							</ul>
 						</nav>
 
@@ -74,7 +74,7 @@
 							<p>
 							
 							At Stanford, I'm a student researcher at Stanford Vision and Learning Lab (SVL),
-							where I am fortunate enough to work with Professors Fei-Fei Li and Ehsan Adeli at the <a href="https://med.stanford.edu/pacresearch.html">Partnership in AI-Assisted Care</a>. In my work there, I've recently published a <a href="https://cs.stanford.edu/~xtiange/projects/occnerf/">paper to ICCV 2023</a> on rendering humans from object-occluded monocular videos using neural radiance fields. I'm also one of the head TA/Course Organizers for Stanford's <a href= "https://web.stanford.edu/class/cs21si/">CS21SI (AI for Social Good)</a>. 
+							where I am fortunate to work with Professors Fei-Fei Li and Ehsan Adeli at the <a href="https://med.stanford.edu/pacresearch.html">Partnership in AI-Assisted Care</a>. In my work there, I've recently published a <a href="#publications">paper to ICCV 2023</a> on rendering humans from object-occluded monocular videos using neural radiance fields. I'm also one of the head TA/Course Organizers for Stanford's <a href= "https://web.stanford.edu/class/cs21si/">CS21SI (AI for Social Good)</a>. 
 						</p>
 						<p>
 							When I'm not in class, you can probably find me beatboxing with <a href = "https://stanfordotone.com"> my a cappella group</a>, sampling the local food scene, or biking aimlessly around campus.
@@ -109,7 +109,7 @@
 											<strong>Relevant Coursework:</strong> Vision (CS 231N), NLP (CS 224N), AI Principles (CS 221), AI for Biomedical Imaging (CS 235), Systems I/II (CS 107/111), Algorithms (CS 161), Linear Algebra/Multivariable Calculus (MATH 51, CS 205L), Probability (CS 109), Graphics (CS 148), Information Theory (ENGR 76)
 										</p>
 										<p>
-											<strong>Planned Coursework:</strong> Decision Making Under Uncertainty (CS 238), Analysis (MATH 115), Applied Number Theory (MATH 110)
+											<strong>Planned Coursework:</strong> Decision Making Under Uncertainty (CS 238), Real Analysis (MATH 115), Applied Number Theory (MATH 110)
 										</p>
 									</header>
 							</article>
@@ -134,7 +134,7 @@
 									<header>
 										<h2><a href="https://svl.stanford.edu">Stanford Vision Lab</a></h2>
 										<h4>Sep 2022 - Present</h4>
-										<h5>I work with Professors Fei-Fei Li and Ehsan Adeli on scene understanding and action recognition research for applications in the ICU.
+										<h5>I work with Professors Fei-Fei Li and Ehsan Adeli on 3D vision and multimodal learning research for applications in the ICU.
 										</h5>
 									</header>
 								</article>
@@ -192,6 +192,51 @@
 
 					</div>
 				</section>
+
+				<!-- Publications -->
+				<section id="publications" class="two">
+					<div class="container">
+
+						<header>
+							<h2>Publications</h2>
+						</header>
+
+						<p>Here's a list of my publications. Stay tuned!</p>
+						<div class="col-4 col-12-mobile">
+							<article class="item">
+								<header>
+									<tr>
+										<td style="width:30%;vertical-align:middle">
+										  <div class="one">
+											<img src='images/occnerf.pdf' width="50%" style="padding-top:70px;">
+										  </div>
+										</td>
+										<td style="width:50%;vertical-align:middle;padding-top:30px;">
+											<papertitle style="font-size: 155%;"> <a href="https://cs.stanford.edu/~xtiange/projects/occnerf/">Rendering Humans from Object-Occluded Monocular Videos</a></papertitle>
+										  
+										  <br>
+										  <a style="color: gray;" href="https://tiangexiang.github.io">Tiange Xiang</a>,
+										  <strong>Adam Sun</strong>,
+										  <a style="color: gray;" href="https://jiajunwu.com">Jiajun Wu</a>,
+										  <a style="color: gray;" href="https://stanford.edu/~eadeli/">Ehsan Adeli</a>,
+										  and <a style="color: gray;" href="https://profiles.stanford.edu/fei-fei-li?releaseVersion=10.5.2">Li Fei-Fei</a>
+										  <br>
+														<em>IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 2023
+										  <br>
+										  <br>
+										  We introduce <strong>OccNeRF</strong>, a neural rendering method that can render humans in severely occluded scenes. <br> We propose surface-based rendering by integrating 
+										  geometry and visibility priors.
+										  <br>
+										  [<a href="https://cs.stanford.edu/~xtiange/projects/occnerf/">Project Page</a>/<a href="https://arxiv.org/pdf/2308.04622.pdf">Paper</a>]
+										</td>
+									  </tr> 
+								</header>
+							</article>
+						</div>
+
+					</div>
+				</section>
+
 				<!-- Portfolio -->
 					<section id="portfolio" class="two">
 						<div class="container">
@@ -205,43 +250,61 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/errorcorrection.png" alt="" /></a>
 										<header>
-											<h3>Ipsum Feugiat</h3>
+											<h3> <a href="https://github.com/adamsunn/medicalerrorcorrection">ASR Error Correction on ICU Clinical Narration Dataset</a> (CS 224N Final Project)</h3>
+											<br>
+											<h5>An ASR error corrector finetuned on a small nurse-corrected ICU clinical narration dataset. </h5>
+											<p>[<a href="assets/other/224N_final_report.pdf">Paper</a>/<a href="https://github.com/adamsunn/medicalerrorcorrection">Code</a>]</p>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/cdcgans.png" alt="" /></a>
 										<header>
-											<h3>Rhoncus Semper</h3>
-										</header>
-									</article>
-								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
-										<header>
-											<h3>Magna Nullam</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>Natoque Vitae</h3>
+											<h3><a href = "assets/other/231n_final_report.pdf">Medical Image Dataset Rebalancing with cDCGANs</a> (CS 231N Final Project)</h3>
+											<br>
+											<h5>Rebalancing medical image datasets by generating minority class images with conditional deep generative adversarial networks.</h5>
+											<p>[<a href="assets/other/231n_final_report.pdf">Paper</a>]</p>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/melanoma.png" alt="" /></a>
 										<header>
-											<h3>Dolor Penatibus</h3>
+											<h3><a href = "assets/other/CS_235_final_report.pdf">Towards Lightweight and Efficient Melanoma Diagnosis</a> (CS 235 Final Project)</h3>
+											<br>
+											<h5>Diagnosing melanoma with a lightweight and efficient CNN-based architecture.</h5>
+											<p>[<a href="assets/other/CS_235_final_report.pdf">Paper</a>]</p>
 										</header>
 									</article>
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+										<a href="#" class="image fit"><img src="images/fidelity.png" alt="" /></a>
 										<header>
-											<h3>Orci Convallis</h3>
+											<h3> <a href="assets/other/fidelity.pdf">Evaluating LIME and SHAP Fidelity with Inherently Interpretable Models</a> (Wells Fargo Internship Report)</h3>
+											<br>
+											<h5>Comparing fidelity of LIME and SHAP with a variety of datasets, models, and model complexities using exact interpretations from inherently interpretable models.</h5>
+											<p>[<a href="assets/other/fidelity.pdf">Report</a>]</p>
+										</header>
+									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/vlm.png" alt="" /></a>
+										<header>
+											<h3><a href="https://github.com/zanedurante/vlm_benchmark">Linear Probing for VLM Activity Recognition</a> (Under Review)</h3>
+											<br>
+											<h5>A video-only linear probing baseline to classify fine-grained activities from vision-language model encodings. </h5>
+											<p>[<a href="https://github.com/zanedurante/vlm_benchmark">Code</a>/Paper Under Review]</p>
+										</header>
+									</article>
+									<article class="item">
+										<a href="#" class="image fit"><img src="images/foodcaption.png" alt="" /></a>
+										<header>
+											<h3><a href = "assets/other/221_final_report.pdf">An Image Captioning Approach to Food Identification</a> (CS 221 Final Project)</h3>
+											<br>
+											<h5>Framing food identification as an image captioning problem so that it can identify new dishes.</h5>
+											<p>[<a href="assets/other/221_final_report.pdf">Paper</a>]</p>
 										</header>
 									</article>
 								</div>
@@ -249,51 +312,7 @@
 
 						</div>
 					</section>
-					<!-- Publicaitions -->
-					<section id="publications" class="two">
-						<div class="container">
-
-							<header>
-								<h2>Publications</h2>
-							</header>
-
-							<p>Here's a list of my publications. Stay tuned!</p>
-							<div class="col-4 col-12-mobile">
-								<article class="item">
-									<header>
-										<tr>
-											<td style="width:30%;vertical-align:middle">
-											  <div class="one">
-												<img src='images/occnerf.jpg' width="50%" style="padding-top:70px;">
-											  </div>
-											</td>
-											<td style="width:50%;vertical-align:middle;padding-top:30px;">
-												<papertitle style="font-size: 155%;"> <a href="https://cs.stanford.edu/~xtiange/projects/occnerf/">Rendering Humans from Object-Occluded Monocular Videos</a></papertitle>
-											  
-											  <br>
-											  <a style="color: gray;" href="https://tiangexiang.github.io">Tiange Xiang</a>,
-											  <strong>Adam Sun</strong>,
-											  <a style="color: gray;" href="https://jiajunwu.com">Jiajun Wu</a>,
-											  <a style="color: gray;" href="https://stanford.edu/~eadeli/">Ehsan Adeli</a>,
-											  and <a style="color: gray;" href="https://profiles.stanford.edu/fei-fei-li?releaseVersion=10.5.2">Li Fei-Fei</a>
-											  <br>
-															<em>IEEE/CVF International Conference on Computer Vision (ICCV)</em>, 2023
-											  <br>
-											  <br>
-											  We introduce OccNeRF, a neural rendering method that can render humans in severely occluded scenes. We propose surface-based rendering by integrating 
-											  geometry and visibility priors.
-											  <br>
-											  [
-											  <a href="https://cs.stanford.edu/~xtiange/projects/occnerf/">project page</a>/<a href="https://arxiv.org/pdf/2308.04622.pdf">paper</a>
-											  ]
-											</td>
-										  </tr> 
-									</header>
-								</article>
-							</div>
-
-						</div>
-					</section>
+					
 
 			</div>
 
